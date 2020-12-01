@@ -15,9 +15,9 @@
  <div class="login">
   <h1>Salary Prediction</h1>
 
-     <!-- Main Input For Receiving Query to our ML -->
+    
     <form action="{{ url_for('predict')}}"method="POST">
-      <!-- name = experience -->
+      
       <input type="text" name="experience" placeholder="Experience" required="required" />
 
       <button type="submit" class="btn">Predict</button>
@@ -25,7 +25,7 @@
 
    <br>
    <br>
-   <strong>{{prediction_text}}</strong>
+   {{prediction_text}}
  </div>
 </body>
 </html>
